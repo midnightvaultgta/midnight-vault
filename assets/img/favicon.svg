@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#050505"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8A6D2C"/>
+      <stop offset="0.45" stop-color="#E8CE8E"/>
+      <stop offset="1" stop-color="#A8853A"/>
+    </linearGradient>
+  </defs>
+  <!-- M ghost, echoing the logo's black-on-black monogram -->
+  <path d="M13 47V17l10 16 10-16v30" fill="none" stroke="#2A2724" stroke-width="3.4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- V in gold -->
+  <path d="M29 18l11 29 11-29" fill="none" stroke="url(#g)" stroke-width="4.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

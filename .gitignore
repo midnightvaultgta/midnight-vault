@@ -1,0 +1,13 @@
+# Local tooling — not part of the website
+.claude/
+
+# Parked pages (wedding, about) — kept locally, not published
+_drafts/
+
+# Superseded first version of the site
+_v1-archive/
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
