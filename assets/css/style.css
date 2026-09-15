@@ -1275,3 +1275,32 @@ a.detail-value:hover { color: var(--gold); }
 .revshare h3 { margin-bottom: var(--s5); }
 .revshare p { font-size: var(--fs-sm); max-width: 68ch; }
 .revshare p + p { margin-top: var(--s4); }
+
+/* --- Instagram --------------------------------------------------------------
+   One link, quiet by design: the site's job is the venue enquiry, not the feed.
+   -------------------------------------------------------------------------- */
+.footer-social {
+  display: inline-flex; align-items: center; gap: var(--s3);
+  margin-top: var(--s5);
+  font-size: var(--fs-sm);
+  color: var(--text-2);
+  transition: color var(--dur) var(--ease);
+}
+.footer-social svg { width: 18px; height: 18px; color: var(--gold); flex: none; }
+.footer-social:hover { color: var(--gold); }
+
+.contact-social {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: var(--s2) var(--s3);
+  margin-top: var(--s7);
+  text-align: center;
+  font-size: var(--fs-sm);
+  color: var(--text-3);
+}
+.contact-social a {
+  display: inline-flex; align-items: center; gap: var(--s2);
+  color: var(--text-2);
+  transition: color var(--dur) var(--ease);
+}
+.contact-social a:hover { color: var(--gold); }
+.contact-social svg { width: 16px; height: 16px; color: var(--gold); flex: none; }
