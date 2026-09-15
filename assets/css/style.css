@@ -1304,3 +1304,52 @@ a.detail-value:hover { color: var(--gold); }
 }
 .contact-social a:hover { color: var(--gold); }
 .contact-social svg { width: 16px; height: 16px; color: var(--gold); flex: none; }
+
+/* Instagram in the header — on every page, pinned while scrolling.
+   Sized to match the menu toggle so the two read as one set on mobile. */
+.nav-social {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; flex: none;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  color: var(--gold);
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease),
+              transform var(--dur) var(--ease);
+}
+.nav-social svg { width: 20px; height: 20px; }
+.nav-social:hover {
+  border-color: var(--gold);
+  background: var(--gold-veil);
+  transform: translateY(-1px);
+}
+
+/* Instagram in the mobile menu */
+.mobile-menu a.m-social {
+  display: inline-flex; align-items: center; gap: var(--s3);
+  margin-top: var(--s6);
+  font-size: var(--fs-body);
+  letter-spacing: 0.02em;
+  color: var(--text-2);
+  transition: color var(--dur) var(--ease);
+}
+.mobile-menu a.m-social svg { width: 24px; height: 24px; color: var(--gold); flex: none; }
+.mobile-menu a.m-social:hover { color: var(--gold); }
+
+@media (max-width: 860px) {
+  .nav-cta { gap: var(--s3); }
+}
+
+/* Mobile menu Instagram link — 44px tall tap target */
+.mobile-menu a.m-social { padding-block: var(--s2); }
+
+/* Narrow phones: logo + Instagram + menu toggle must share one row
+   without pushing the toggle off-screen. */
+@media (max-width: 420px) {
+  .logo { gap: var(--s3); }
+  .logo-name { font-size: 0.875rem; letter-spacing: 0.18em; }
+  .nav-cta { gap: var(--s2); }
+}
+@media (max-width: 360px) {
+  .logo-mark { width: 34px; }
+  .logo-name { font-size: 0.75rem; letter-spacing: 0.14em; }
+}
