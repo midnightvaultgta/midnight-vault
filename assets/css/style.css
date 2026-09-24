@@ -1353,3 +1353,17 @@ a.detail-value:hover { color: var(--gold); }
   .logo-mark { width: 34px; }
   .logo-name { font-size: 0.75rem; letter-spacing: 0.14em; }
 }
+
+/* Age flag on a product name (Mystery Bag) */
+.product-flag {
+  display: inline-block;
+  margin-left: var(--s2);
+  padding: 2px 7px;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  border: 1px solid var(--gold-line);
+  border-radius: 2px;
+  vertical-align: middle;
+}
