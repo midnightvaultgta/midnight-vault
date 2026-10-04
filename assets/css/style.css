@@ -872,13 +872,6 @@ a.detail-value:hover { color: var(--gold); }
   position: relative;
   display: flex; justify-content: center;
 }
-/* Pool of light behind the unit so it doesn't float on flat black */
-.spec-media::before {
-  content: "";
-  position: absolute; inset: 6% 0 0;
-  background: radial-gradient(ellipse 62% 52% at 50% 46%, var(--gold-veil), transparent 70%);
-  pointer-events: none;
-}
 /* Units render at heights proportional to their real ones (33.3in vs 40.5in)
    so the page never implies the two machines are the same size. */
 .spec-media { --unit-scale: 1; }
