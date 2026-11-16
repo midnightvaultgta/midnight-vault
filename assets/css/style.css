@@ -1360,3 +1360,12 @@ a.detail-value:hover { color: var(--gold); }
   border-radius: 2px;
   vertical-align: middle;
 }
+
+/* "optional" marker on a form label — the quiet counterpart to .req */
+.field .opt {
+  margin-left: var(--s2);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
